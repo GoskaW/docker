@@ -1,0 +1,3 @@
+del build.libs/*.jar
+call gradlew build
+IF exist build/libs/*.jar COPY ../project ELSE echo Compilation error
